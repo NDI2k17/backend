@@ -1,0 +1,40 @@
+Nom,Contact ,Role,Responsable,Niveau Hierarchique,Equipe,Competences,Projets,Complements
+Jon Snow,Paris - Saclay 21h,Conducteur de calèche 200 chevaux,Aucun,Adulte,Alcoolisé,Sors d'une soirée fort alcoolisée après 12 pintes de bière,Ramener sa petite soeur en voiture à la maison,Interdit et puni par la loi
+Arya Stark,Paris - Saclay 21h,Passager,Jon Snow,Enfant,Enfant,Sors d'une soirée pyjama entre ami,Se faire ramener chez elle en voiture par son frère,Non conseillé
+Sansa Stark,Seine Saint-Denis - 00:30,Piétonne,Aucun,Adulte,Alcoolisé,Sors de boîte de nuit fatiguée et alcoolisée,Dormir dans l'ombre sur la route,Non conseillé
+Bran Stark,Paris - Saclay 21h05,Piéton en fauteuil roulant,Aucun,Enfant,Enfant,Traverse de manière sécurisée sur le passage piéton,Veut rentrer chez lui,Conseillé mais Jon risque de l'écraser
+Daenerys Targaryen,Marseille - 16h,Conductrice de Dragon à moteur,Aucun,Adulte,Chauffard,Dépasser les limitations de vitesse,Rentrer chez elle le plus vite possible,Non conseillé
+Ramsay Bolton,Lyon - 22h,Piéton,Aucun,Adulte,Sobre,Laisse ses chiens sans laisse,Promène ses chiens sur la route,Non conseillé
+Theon Greyjoy,Seine Saint-Denis - 0h30,Handicapé,Euron Greyjoy,Adulte,Drogué,Sors d'une soirée entre copains,Rentrer chez lui,Drogue = interdit
+Euron Greyjoy,Lyon 22h,Chauffeur de Taxi,Aucun,Adulte,Chauffard,Musiques entraînante à fond,Rouler beaucoup trop vite,Interdit et puni
+Tyrion Lannister,Calais 2h30,En moto,Tyrion Lannister,Adulte,Chauffard,N'a pas le permis,Se balader en moto,Interdit et puni
+Jaime Lannister,Calais 2h30,Conducteur de Lamborghini,Jaime Lannister,Adulte,Chauffard,Roule en toute sobriété,Klaxonner à tout-va en pleine agglomération,Interdit et puni
+Cersei Lannister,Calais 2h30,Passagère,Jaime Lannister,Adulte,Droguée sous cannabis,Passagère avec Jamie,Rentrer tranquillement,"Drogué = Interdit, mais conseillé de rentrer avec quelqu'un de sobre."
+Oberyn Martell,Dorne,Roi,Aucun,1,Martell,Maniement de l'epee,Profiter de la vie,
+Ellaria Sand,Dorne,Reine,Aucun,2,Martell,Combattante agile,Venger son mari,
+Hodor,Westeros - Nord,Valet,Bran Stark,3,Peuple de Westeros,Force incroyable,Defendre Bran,
+Jorah Mormont,Westeros - Essos,Conseiller,Daenerys Targaryen,2,Targaryen,Courageux,Defendre sa reine,
+Daario Naharis,Essos,Combattant,Daenerys Targaryen,3,Targaryen,Combattant aguerri,Defendre sa reine,
+Missandei,Essos,Conseiller,Daenerys Targaryen,2,Targaryen,"Devoue, attentionnee",Servir sa reine,
+Olenna Tyrell,Westeros,Reine,Aucun,1,Tyrell,Femme d'affaire,Proteger ses enfants,
+Margaery Tyrell,Westeros,Reine,Aucun,2,Tyrell,Manipulatrice,Le pouvoir,
+Loras Tyrell,Westeros,Prince,Aucun,2,Tyrell,Combattant aguerri,Profiter de la vie,
+Petyr Baelish,Westeros,Conseiller,Aucun,2,Peuple de Westeros,Manipulateur,Se marier avec Sansa,
+Varys,Westeros,Conseiller,Aucun,2,Peuple de Westeros,Fin startege,Controler le monde,
+Le Grand Moineau,Westeros,Religieux,Aucun,3,Peuple de Westeros,Persuasif,Diffuser sa religion,
+Brienne de Torth,Westeros,Chevalier,Sansa Stark,3,Peuple de Westeros,Devoue,Defendre Sansa,
+Bronn,Westeros,Mercenaire,Aucun,3,Peuple de Westeros,Combattant aguerri,Profiter de la vie,
+Viserion,Ciel - Essos,Dragon,Le roi de la Nuit,3,Marcheur Blanc,Détruire le mur,Conquérir Westeros,
+Rhaegal,Ciel - Essos,Dragon,Daenerys Targaryen,3,Dragons,C'est un dragon,Servir leur mère,
+Drogon,Ciel - Essos,Dragon,Daenerys Targaryen,3,Dragons,Brûler des enfants,Servir leur mère,
+Le roi de la Nuit,Westeros - Nord,Roi,Aucun,1,Marcheurs blancs,Transformer les entités mortes en marcheurs blancs,Détruire la race humaine,
+Enfant de la forêt,Westeros - Nord,Premier peuple de Westeros,Aucun,3,,Peuvent créer des marcheurs blancs,Sauver les Hommes,
+Robert Baratheon,Westeros - Kings Landing,Roi,Aucun,1,Baratheon,Boire beaucoup d'alcool,Regir Westeros,
+Joffrey Baratheon,Westeros - Kings Landing,Roi,Cersei Lannister,1,Baratheon (Lannister),Psychopathe,Régir Westeros,
+Stannis Baratheon,Westeros - Peyredragon,Prétendant au trône,Aucun,1,Baratheon,Perdre des batailles,Devenir roi des 7 royaumes.,
+Myrcella Baratheon,Dorne,Princesse,,,,,,
+Shireen Baratheon,,,,,,,,
+Selyse Florent,,,,,,,,
+Davos Mervault,,,,,,,,
+Melisandre,,,,,,,,
+Renly Baratheon,,,,,,,,
