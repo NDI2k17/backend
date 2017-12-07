@@ -1,15 +1,38 @@
 from flask import Flask, abort, json, redirect, request, url_for, make_response
 
-import os
+import os, time
+
+# ########################################################
+def _external_add(sessionId, _dict):
+    # Check if the sessionId is known
+    pass
+def _external_get_answer(**b):
+    return json.dumps(b)
 
 # ########################################################
 def get_answer(question, sessionId=None):
-    return str((question, sessionId))
+    _external_add(sessionId, dict(
+        timestamp=time.time(),
+        who='user',
+        message=question
+    ))
+
+    answer = _external_get_answer(
+        question=question, sessionId=sessionId)
+
+    _external_add(sessionId, dict(
+        timestamp=time.time(),
+        who='bot',
+        message=answer
+    ))
+
+    return answer
 
 # ########################################################
 # History will be a list of elements, with each elements
 #   formatted like this:
-# {'timestamp':1512685346.413079}
+# {'timestamp':1512685346.413079, 'who':'user',
+# 'message':'Hello'}
 def get_history(sessionId):
     raise NotImplementedError
 
@@ -32,7 +55,6 @@ defaultSessionId = 'ffffffffffffffffffffffffffffffff'
 def api_answer(question):
     if request.method.upper() == 'GET' and not app.debug:
         return '{"error":"Please use POST instead of GET"}', 405
-
     try:
         # KeyError will only be caught for this line
         try:
