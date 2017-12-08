@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nom,Contact,Role,Responsable,Niveau Hierarchique,Equipe,Competences,Projets,Complements
 Jon Snow,Westeros - Nord,Roi,Jon Snow,1,Stark,Meneur d'hommes,Arrêter les marcheurs blancs,https://fr.wikipedia.org/wiki/Personnages_de_Game_of_Thrones
 Arya Stark,Westeros - Nord,Combattante,Jon Snow,2,Stark,"Tueuse, Determinee",Se venger,https://fr.wikipedia.org/wiki/Personnages_de_Game_of_Thrones
@@ -28,3 +29,30 @@ Varys,Westeros,Conseiller,Aucun,2,Peuple de Westeros,Fin startege,Controler le m
 Le Grand Moineau,Westeros,Religieux,Aucun,3,Peuple de Westeros,Persuasif,Diffuser sa religion,https://fr.wikipedia.org/wiki/Personnages_de_Game_of_Thrones
 Brienne de Torth,Westeros,Chevalier,Sansa Stark,3,Peuple de Westeros,Devoue,Defendre Sansa,https://fr.wikipedia.org/wiki/Personnages_de_Game_of_Thrones
 Bronn,Westeros,Mercenaire,Aucun,3,Peuple de Westeros,Combattant aguerri,Profiter de la vie,https://fr.wikipedia.org/wiki/Personnages_de_Game_of_Thrones
+=======
+Nom,Contact ,Role,Responsable,Niveau Hierarchique,Equipe,Competences,Projets,Complements
+Jon Snow,Paris - Saclay,Conducteur de calèche 200 chevaux,21h,Adulte,Alcoolisé,Sors d'une soirée fort alcoolisée après 12 pintes de bière,Ramener sa petite soeur en voiture à la maison,Interdit et puni par la loi
+Arya Stark,Paris - Saclay,Passager,21h,Enfant,Enfant,Sors d'une soirée pyjama entre ami,Se faire ramener chez elle en voiture par son frère,Non conseillé car dangereux
+Sansa Stark,Seine Saint-Denis ,Piétonne,0h25,Adulte,Alcoolisé,Sors de boîte de nuit fatiguée et alcoolisée,Dormir dans l'ombre sur la route,Non conseillé
+Bran Stark,Paris - Saclay,Piéton en fauteuil roulant,21h05,Enfant,Enfant,Traverse de manière sécurisée sur le passage piéton,Veut rentrer chez lui,Conseillé mais Jon risque de l'écraser
+Daenerys Targaryen,Marseille,Conductrice de Dragon à moteur,16h,Adulte,Chauffard,Dépasser les limitations de vitesse,Rentrer chez elle le plus vite possible,Non conseillé
+Ramsay Bolton,Lyon,Piéton,22h,Adulte,Sobre,Laisse ses chiens sans laisse,Promène ses chiens sur la route,Non conseillé
+Theon Greyjoy,Seine Saint-Denis ,Handicapé,0h30,Adulte,Drogué,Sors d'une soirée entre copains,Rentrer chez lui,Drogue = interdit
+Euron Greyjoy,Lyon,Chauffeur de Taxi,22h,Adulte,Chauffard,Musiques entraînante à fond,Rouler beaucoup trop vite,Interdit et puni
+Tyrion Lannister,Calais,En moto,2h30,Adulte,Chauffard,N'a pas le permis,Se balader en moto,Interdit et puni
+Jaime Lannister,Calais,Conducteur de Lamborghini,2h30,Adulte,Chauffard,Roule en toute sobriété,Klaxonner à tout-va en pleine agglomération,Interdit et puni
+Cersei Lannister,Calais,Passagère,2h30,Adulte,Droguée sous cannabis,Passagère avec Jamie,Rentrer tranquillement,"Drogué = Interdit, mais conseillé de rentrer avec quelqu'un de sobre."
+Melisandre,Guingamp,Conductrice de voiture volée,19h,Ancestrale,Dealeuse,Se fait interpeller par la police,Tenter d'échapper à la police,Arrestation et immobilisation du véhicule
+Hodor,Montpellier,Videur,14h,Adulte,Sobre,Se fait insulter par un motard,Tenter de le frapper,Interdiction d'insulter sur la voie publique et interdiction de frapper sur la voie publique
+Samwell Tarly,Strasbourg,Cycliste,17h,Grand enfant,Ecologiste,Rouler.,Se déplacer principalement à vélo,Fortement conseillé !
+Olenna Tyrell,Cannes,Conductrices de 4 taureaux,10h30,Ancêtre,Chauffard,Ecraser un maximu de gens sur la voie publique,Ecraser Joffrey,Récompensé !!!!
+Margaery Tyrell,Vincennes,Prostituée,23h,Jeune adulte,Prostituée,Séduire pour gagner de l'argent,Se faire payer par Bronn,Puni par la loi car interdit
+Brienne de Torth,Seine Saint-Denis ,Homme de main,0h,Adulte,Sobre,Cherche Sansa,Veux enlever Sansa,L'enlèvement est interdit
+Bronn,Vincennes,Automobiliste,23h,Adulte,Dépravé,Accoste une prostituée dans la rue,Profiter de la vie,Interdit et puni #Karma
+Drogon,Ciel,Dragon,16h,2 Chevaux,Dragons,Brûler tout ce qu'il voit,Brûler des voitures,Interdit et puni.. pourtant c'est un moyen de transport ?
+Le roi de la Nuit,Neuilly,Braqueur,12h30,Adolescent,Les méchants,Braquer des moyens de locomotions,Carjacquer un dragon,Il peut toujours essayer
+Joffrey Baratheon,Cannes,Star,10h30,Adolescent,Star,Se la péter,Régner sur la France,Assassinat récompensé
+Sandor Clegane,Evry,Programmeur,2h48,Etudiants,404 Not Found,Participer à un concours,Faire un programme qui n'a aucun sens,On sait pas trop
+Personne,nulle part,On sait pas,à une certaine heure,Personne,Absent,Il ne fait rien,On ne sait pas,"""A girl has no name"""
+Tormund,Rennes,Touriste,11h,Yamakasi,Grimpeur,Faire du parkour,Passer au dessus des murs,Interdit car propriétés privées
+>>>>>>> 71cb03acacf14371e8561081e13c0fd53e705a6f
