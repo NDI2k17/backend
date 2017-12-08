@@ -6,7 +6,10 @@ from flask import request
 from flask import url_for
 from flask import make_response
 
-import os, time
+import os
+import time
+
+import recon
 
 # ########################################################
 def _external_add(sessionId, _dict):
@@ -14,8 +17,8 @@ def _external_add(sessionId, _dict):
     pass
 
 def _external_get_answer(question, sessionId):
-    return json.dumps(
-        dict(question=question, sessionId=sessionId))
+    question = question.replace("+", " ")
+    return recon.get_answer(question)
 
 def _external_get_history(sessionId):
     return {}
@@ -70,11 +73,11 @@ def api_answer(question=None):
         question = request.get_data()
         length = len('question=')
         try:
-            index = request.get_data().lower().index('question=')
+            index = request.get_data().lower().index(b'question=')
         except ValueError:
             return '{"error":"Please give us a \'question\' field in data"}', 401
         question = question[index + length:]
-        if '&' in question:
+        if b'&' in question:
             question = question[:question.index('&')]
 
     if request.method.upper() == 'GET' and not app.debug:
@@ -148,10 +151,11 @@ def api_history():
 def default(path):
     abort(404)
 
-
 def main():
-    app.run(host=os.getenv('IP', '0.0.0.0'),
-            port=int(os.getenv('PORT', 4444)))
+    # Build db
+    db = recon.build_db()
+
+    app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 80)))
 
 if __name__ == '__main__':
     main()

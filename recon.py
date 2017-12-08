@@ -2,14 +2,14 @@ import sqlite3
 import logging
 import re
 
-from random import shuffle
+from random  import choice
 from dataset import loader
 
 _logg = logging.getLogger()
 _logg.addHandler(logging.StreamHandler())
 _logg.setLevel(logging.DEBUG)
 
-_conn = sqlite3.connect(":memory:")
+_conn = sqlite3.connect(":memory:", check_same_thread=False)
 _c    = _conn.cursor()
 
 DEFAULT_ANSWERS = [
@@ -77,7 +77,7 @@ def get_answer(question):
 
     # Si pas de classes trouvées, on return
     if len(classes_found) == 0:
-        return shuffle(DEFAULT_ANSWERS)
+        return choice(DEFAULT_ANSWERS)
 
     # We need each type of tags
     def get_types_for_tag(tag):
@@ -121,6 +121,8 @@ def get_answer(question):
 
     # Match them in the DB
     # So we look for tags in `classes_found`, based on data in `tags`
+
+    return "HHHHH"
 
 if __name__ == "__main__":
     build_db()
