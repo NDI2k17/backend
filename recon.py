@@ -57,12 +57,12 @@ def get_answer(question):
     classes = {
             "Nom"         : ".*(qui|nom|appelle).*",
             "Contact"     : ".*(contact|lieu|où|habite).*",
-            "Role"        : ".*(fait|role|véhicule|piéton).*",
+            "Role"        : ".*(fait|role|rôle|véhicule|piéton).*",
             "Responsable" : ".*(supérieur|responsable|frère|soeur).*",
-            "Niveau"      : ".*(adulte|enfant|niveau).*",
+            "Niveau"      : ".*(adulte|enfant|niveau|hiéra|hiera).*",
             "Equipe"      : ".*(état|équipe).*",
-            "Competences" : ".*(situation|compétence|projet).*",
-            "Projets"     : ".*(faire|projets).*",
+            "Competences" : ".*(capable|peu|situation|compétence|projet).*",
+            "Projets"     : ".*(fait|projet|faire).*",
             "Complements" : ".*(suplémentaires|complément|complète).*"
     }
 
@@ -85,6 +85,8 @@ def get_answer(question):
 
         for type_tag in ("Nom", "Contact", "Role", "Responsable", "Niveau", "Equipe", "Competences", "Projets", "Complements"):
             # Check if in column
+            # On désactive "Responsable"
+            if type_tag == "Responsable": continue
             for row in _c.execute("SELECT group_concat({}, \",\") FROM db".format(type_tag)):
                 if tag in row[0].split(","):
                     tag_type.append(type_tag)
@@ -107,7 +109,7 @@ def get_answer(question):
         return query
 
     # Build sql query
-    sql_query = "SELECT {} FROM db WHERE ".format(build_search_query())
+    sql_query = "SELECT {}, Nom, Competences, Projets, Complements FROM db WHERE ".format(build_search_query())
 
     # Start building via tags
     for tag in tags:
@@ -116,14 +118,24 @@ def get_answer(question):
             # TODO: remove duplicates
             sql_query = extend_sql_query_string(sql_query, "{}='{}'".format(type_of_tag, tag))
 
+    _logg.debug("CORE: executing sql query: {}".format(sql_query))
+    
+    results = []
+
     for row in _c.execute(sql_query):
-        print(row)
+        _logg.debug(row)
+        results.append(row)
 
-    # Match them in the DB
-    # So we look for tags in `classes_found`, based on data in `tags`
+    # Build the response
+    response = ""
 
-    return "HHHHH"
+    # V0 de base: on assume que le premier élément contiend la réponse, tupple de liste
+    response  = "Trop facile : '{}' !".format(results[0][0])
+    response += "\n"
+    response += "Au fait, {} sait {}, a pour projet '{}', mais attention : '{}'".format(results[0][-4], results[0][-3], results[0][-2], results[0][-1])
+
+    return response
 
 if __name__ == "__main__":
     build_db()
-    get_answer(input(" > "))
+    print(get_answer(input(" > ")))

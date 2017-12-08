@@ -18,7 +18,10 @@ def _external_add(sessionId, _dict):
 
 def _external_get_answer(question, sessionId):
     question = question.replace("+", " ")
-    return recon.get_answer(question)
+    try:
+        return recon.get_answer(question)
+    except:
+        return "An unknown error occured"
 
 def _external_get_history(sessionId):
     return {}
